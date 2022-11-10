@@ -6,7 +6,7 @@ Chris Carrico
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    background-image: url("images/abstractPic.jpg");
+    background-image: url("../image/abstractPic.jpg");
     background-size: cover;
 }
 
@@ -53,12 +53,30 @@ h3 {
 
 .peace {
      background: url('../image/peaceSign.png') no-repeat left top;
-      height: 34px;
-  padding-top: 7px;
-  padding-left: 44px;
+   
+  padding-left: 15px;
   }
 .list{
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
+footer {
+    font-size: .75em;
+  	text-align: center;
+ 	margin top: 10px;
+  	padding bottom: 10px;
+}
+
+nav {
+    width: 175px;
+    background-color: #E7DBF6;
+    float: left;
+  }
+
+
+  article {
+    margin-left: 175px;
+    background-color: white;
+    padding: 10px;
+  }

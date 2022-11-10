@@ -1,0 +1,29 @@
+/* tyler forsgren 11/9/22*/
+body {
+    background-color: #181A1B;
+    color:white;
+    font-size:16px;
+    padding 30px;
+}
+.highlight{
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+.alert{
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.blue{
+    background: blue;
+}
+
+.intro {
+    font-size: 25px;
+    color: yellow;
+    padding: 50px 100px;
+    text-align: center;
+}

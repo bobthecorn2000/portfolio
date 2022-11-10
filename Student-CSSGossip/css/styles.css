@@ -52,7 +52,7 @@ h3 {
 }
 
 .peace {
-     background: url('image/peaceSign.png') no-repeat left top;
+     background: url('../image/peaceSign.png') no-repeat left top;
       height: 34px;
   padding-top: 7px;
   padding-left: 44px;

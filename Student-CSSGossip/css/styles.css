@@ -53,4 +53,12 @@ h3 {
 
 .peace {
      background: url('image/peaceSign.png') no-repeat left top;
+      height: 34px;
+  padding-top: 7px;
+  padding-left: 44px;
   }
+.list{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}

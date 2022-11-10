@@ -20,7 +20,7 @@ h3 {
     border-bottom: 1px, solid, black;
 }
 
-.font span {
+span.font  {
     color: orange;
     font-family: 'Comic Sans MS', san-serif;
     font-size: 1.5em;
@@ -28,13 +28,13 @@ h3 {
     font-weight: bold;
 }
 
-.color span {
+span.color{
 
     color: red;
     font-weight: bold;
 }
 
-.more span {
+span.more  {
 
     color: blue;
     text-decoration: underline;
@@ -43,7 +43,7 @@ h3 {
 
 }
 
-.backgrounds span {
+span.backgrounds {
 
     color: green;
     font: Trebuchet MS, san-serif;

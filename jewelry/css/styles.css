@@ -25,15 +25,35 @@ main{
     margin:20px;
     border-radius:2em;
     font-size:1.25em;
-    font-family: "kirby classic";
+    font-family: sans-serif, serif, monospace;
     
 }
 
 @font-face{
-    font-family: "kirby classic";
-    src: url("../fonts/kirby-classic.woff") format("woff");
-    src: url("../fonts/kirby-classic.ttf") format("truetype");
+    font-family: "pacifico";
+    src: url("../fonts/pacifico-regular-webfont.woff") format("woff");
+    src: url("../fonts/pacifico-regular-webfont.woff2") format("woff2");
 }
 
+.addrightmargin {
+    float:left;
+    border-radius: 100px;
+    margin-right: 10%
+}
+ul {
+    list-style-type: none;
+    font-size:1.5em;
+   
+}
+nav {
+     clear:left;
+}
+h1 {
+    font-family:"pacifico";
+    font-size:3.5em
+}
 
+h2 {
+    font-family:"pacifico"
+}
 

@@ -14,7 +14,19 @@ html {
     border-radius: 15%;
 	background: rgba(243,205,170, 0.4);
     width: 70%;
-    position:relative;
+    position: relative;
+}
+footer {
+    padding-bottom: 10px;
+}
+main{
+    background-image:linear-gradient(#ffffff,#f0f9e6);
+    padding:10px;
+    margin:20px;
+    border-radius:2em;
+    font-size:1.25em;
+    font-family: "kirby classic";
+    
 }
 
 

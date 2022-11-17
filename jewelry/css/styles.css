@@ -25,14 +25,15 @@ main{
     margin:20px;
     border-radius:2em;
     font-size:1.25em;
-   
+    font-family: "kirby classic";
     
 }
-@font-face{
-     font-family: "kirby classic";
-    src: url("../fonts/kirby-classic.woff") format("woff");
-}
 
+@font-face{
+    font-family: "kirby classic";
+    src: url("../fonts/kirby-classic.woff") format("woff");
+    src: url("../fonts/kirby-classic.ttf") format("truetype");
+}
 
 
 

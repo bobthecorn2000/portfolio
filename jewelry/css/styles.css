@@ -1,0 +1,22 @@
+
+/*tyler forsgren 11/17/22 */
+
+
+html {
+    background-image: url("../images/jewelry.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+}
+	 
+#outerwrapper {	
+    border-radius: 15%;
+	background: rgba(243,205,170, 0.4);
+    width: 70%;
+    position:relative;
+}
+
+
+
+

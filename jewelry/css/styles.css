@@ -15,6 +15,9 @@ html {
 	background: rgba(243,205,170, 0.4);
     width: 70%;
     position: relative;
+    margin-left:auto;
+	margin-right:auto;
+	margin-top:4%; 
 }
 footer {
     padding-bottom: 10px;
@@ -40,7 +43,7 @@ main{
     border-radius: 100px;
     margin-right: 10%
 }
-ul {
+.nobullet {
     list-style-type: none;
     font-size:1.5em;
    

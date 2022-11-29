@@ -1,4 +1,14 @@
+
 tr:nth-child(even) {
   background-color: yellow;
     color:black;
+}
+h2, table {
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+p {
+    text-align:center
 }

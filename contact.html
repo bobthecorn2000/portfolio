@@ -1,45 +1,88 @@
 <head>
    <!-- Dev Note: I have an artist designing a new better favicon -->   
-  <!--<link rel="stylesheet" href="../project.css"> -->
+  <link rel="stylesheet" href="project.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <title> Projects Hub </title>
 </head> 
 <body>
-    <h1>Tyler Forsgren</h1>
+    
     
         <div class="topnav" id="myTopnav">
-  <!--<img class="logo" src="../photos/banner.png" alt="Fox Logo">-->
-            <ul>
-                <li> <a class="toplinks" href="index.html">home</a> </li>
-           <li> <a class="toplinks" href="about.html">about</a></li>
-           <li> <a class="toplinks" href="experience.html">experience</a></li>
-           <li> <a class="toplinks" href="contact.html">contact</a></li>
-            </ul>
-<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+            <div class="logo">
+  <a href="index.html"><img src="photos/banner.png" alt="Fox Logo"></a>
+  <a href="index.html"><img class="altlogo"src="photos/banneralt.png" alt="Fox Logo"></a>
+         </div>   
+                <a class="toplinks" href="contact.html">contact</a>
+             <a class="toplinks" href="about.html">about</a>
+            <a class="toplinks" href="experience.html">experience</a>
+                 <a class="toplinks" href="index.html">home</a> 
+           
+           
+            
+                
+
+            
         </div>
    <!-- <h2 style="text-align: center" ><img src="../photos/websitebetasmall.png" class="responsive" alt="Bobthecorn Projects"> </h2> -->
    <div style="text-align: center"> <!-- DIV Alignment idea by William Beukelman -->
        <main>
 <h2>Contact me</h2>
-           <p>contact me a <a>demoemail@email.com</a> or at 555-555-5555</p><br>
+            <form action="mailto:8w60ifb96@relay.firefox.com?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+            <legend></legend>
+            <!-- Company Select Box, page 97 -->
+            <div>
+              <p>Company</p>  
+                <input type="text" name="company" required> 
+            </div>
+            <!-- Person to Contact Select Box, page 97 -->
+            <div>
+                <p>person to contact </p>
+                <input type="text" name="contact" required> 
+            </div>
+            <!-- Email, textbook file rental.html -->
+            <!--Video 9.9 Building and Testing a Valid Form-->
+            <div>
+                <p>email <input type="email" name="email" required> </p>
+                
+            </div>
+            <!-- Phone, textbook file rental.html-->
+            <!--Video 9.9 Building and Testing a Valid Form-->
+            <div>
+                <p>phone number <input type="tel" name="phone" required></p>
+            </div>
+        </fieldset>
+
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+            <legend></legend>
+            <!-- Select Box, page 98 -->
+            <select name="select" required>
+                <option>select one</option>
+               <option value="1st option">internship</option>
+            </select>
+
+            <!-- Radio Buttons, page 99 -->
+            <p>how did you find me</p>
+            <input type="radio" name="radio-option" value="linkedin" />linkedin
+            <input type="radio" name="radio-option" value="job fair" checked />job fair
+            <input type="radio" name="radio-option" value="cwi corporate partner" />cwi corporate partner
+
+            <div>
+                <!-- Text Area, textbook file code-9-1.html -->
+                <textarea name="textarea"></textarea>
+            </div>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit" class="btn">
+    </form>
 
        </main>
 </div> 
     <hl></hl>
     <footer><p>find me on <a href="https://www.linkedin.com/">linkedin</a> and <a href="https://github.com/">github</a></p> </footer>
     
-    <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+
 </body>

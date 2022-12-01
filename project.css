@@ -31,7 +31,28 @@ body {
 
 .logo {
     align-self: flex-start;
+    display: inline-block;
+    position: relative;
+    
+   
 }
+.logo .altlogo{
+    display:none;
+    position: absolute;
+    z-index: 99;
+    top: 11px;
+        left: 0;
+    background-color: black;
+}
+
+.logo:hover .altlogo{
+    
+    display: inline;
+    
+    
+  
+}
+
 
 h1 {
     color: white;
@@ -51,7 +72,11 @@ h2 {
     overflow: hidden;
     background-color: yellow;
 }
-
+.topnav .logo a {
+    float:left;
+    padding: 11px 0px;
+    align-self: flex-start;
+}
 .topnav a {
     float: right;
     display: block;
@@ -173,4 +198,16 @@ background-color: #101010;
 .hoverbutton:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+.spoonguy {
+    width:160px;
+}
+
+fieldset {
+    background-color: yellow;
+    border-radius: 30px;
+}
+fieldset p{
+    color:black;
 }

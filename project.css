@@ -211,3 +211,64 @@ fieldset {
 fieldset p{
     color:black;
 }
+.masterflex{
+    display: flex;
+     margin: auto;
+ align-items: center;
+     justify-content: center;
+}
+.flex {
+background-color: yellow;
+  margin: auto;
+  padding: 100px;
+    
+    font-size: 30px;
+    border-radius: 30px;
+     transition: background-color ease 0.5s, color ease 0.5s, background ease 0.5s;
+    
+}
+.masterflex a{
+    text-decoration: none;
+    color:Black;
+}
+
+.flex1:hover {
+    background-color: black;
+    color:white;
+    font-family: 'tangerine', serif;
+    font-size: 45px;
+}
+
+.flex2:hover {
+    
+	background-color: transparent;
+	background: linear-gradient(to top left,#FFFF00,#FF6600,#006699,#3333FF);
+    
+    color:white;
+}
+
+.flex3:hover {
+    
+    background: red;
+    animation: switch 4s infinite;
+    color:white;
+}
+
+footer {
+    text-align: center;
+}
+
+	@keyframes switch {
+		0% {
+			background: red;
+            border-radius:0% ;
+		}
+		50% {
+			background: blue;
+            border-radius:50% ;
+		}
+		100% {
+			background: red;
+            border-radius:0% ;
+		}
+	

@@ -1,7 +1,11 @@
 p {
-    color: white
+    color: white;
+   font-family: 'kirby', "Times New Roman", serif;
 }
 
+body {
+    font-family: 'kirby', "Times New Roman", serif;
+}
 li {
     float: right;
 }
@@ -271,4 +275,11 @@ footer {
 			background: red;
             border-radius:0% ;
 		}
-	
+}
+	@font-face {
+    font-family: 'kirby';
+    src: url("font/kirby-classic.woff") format('woff'),
+    url("font/kirby-classic.ttf") format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}

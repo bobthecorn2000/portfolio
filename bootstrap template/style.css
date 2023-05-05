@@ -1,0 +1,9 @@
+.center {
+    text-align:center;
+}
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+    background-color: rgb(170, 170, 170);
+    background-image: none;
+}

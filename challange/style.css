@@ -1,0 +1,82 @@
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0px;
+  
+  background-color: #242729;
+  height: 100vh; /* Full height */
+  position: sticky; /* Make it stick, even on scroll */
+  overflow: hidden;
+    top:0;/* Enable scrolling if the sidenav has too much content */
+}
+
+li a {
+  display: block;
+
+     color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+    font-size: 1em;
+    
+}
+li a:hover {
+  background-color: green;
+  color: white;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.page{
+    display: grid;
+   grid-template-columns: .1fr 1fr ;
+        grid-gap: 20px;
+}
+
+
+
+
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#contact-form button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#response {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

@@ -24,72 +24,192 @@
              <a class="toplinks" href="about.html">about</a>
             <a class="toplinks" href="experience.html">experience</a>
                  <a class="toplinks" href="index.html">home</a> 
-           
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
            
             
                 
 
             
         </div>
+    
    <!-- <h2 style="text-align: center" ><img src="../photos/websitebetasmall.png" class="responsive" alt="Bobthecorn Projects"> </h2> -->
    <div style="text-align: center"> <!-- DIV Alignment idea by William Beukelman -->
        <main>
-<h2>Contact me</h2>
+           <div class="container">
+   <form name="contactForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <span id="nameError"></span><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+    <span id="emailError"></span><br>
+    
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject"><br>
+    <span id="subjectError"></span><br>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea><br>
+    <span id="messageError"></span><br>
+    
+    <label for="newsletter">
+      <input type="checkbox" id="newsletter" name="newsletter" checked="">
+      Sign up for our newsletter
+    </label><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+        
+     </div>
+<!--  <h2>Contact me</h2>
             <form action="mailto:8w60ifb96@relay.firefox.com?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
         <!-- Group Fields Together, page 104 -->
-        <fieldset>
+  <!--       <fieldset>
             <legend></legend>
             <!-- Company Select Box, page 97 -->
-            <div>
+     <!--        <div>
               <p>Company</p>  
                 <input type="text" name="company" required> 
             </div>
             <!-- Person to Contact Select Box, page 97 -->
-            <div>
+     <!--        <div>
                 <p>person to contact </p>
                 <input type="text" name="contact" required> 
             </div>
             <!-- Email, textbook file rental.html -->
             <!--Video 9.9 Building and Testing a Valid Form-->
-            <div>
+  <!--           <div>
                 <p>email <input type="email" name="email" required> </p>
                 
             </div>
             <!-- Phone, textbook file rental.html-->
             <!--Video 9.9 Building and Testing a Valid Form-->
-            <div>
+<!--             <div>
                 <p>phone number <input type="tel" name="phone" required></p>
             </div>
         </fieldset>
 
         <!-- Group Fields Together, page 104 -->
-        <fieldset>
+ <!--        <fieldset>
             <legend></legend>
             <!-- Select Box, page 98 -->
-            <select name="select" required>
+  <!--           <select name="select" required>
                 <option>select one</option>
                <option value="1st option">internship</option>
             </select>
 
-            <!-- Radio Buttons, page 99 -->
-            <p>how did you find me</p>
-            <input type="radio" name="radio-option" value="linkedin" />linkedin
+  <!-- <!--           <!-- Radio Buttons, page 99 -->
+        <!--     <p>how did you find me</p>
+     <!--        <input type="radio" name="radio-option" value="linkedin" />linkedin
             <input type="radio" name="radio-option" value="job fair" checked />job fair
             <input type="radio" name="radio-option" value="cwi corporate partner" />cwi corporate partner
 
             <div>
                 <!-- Text Area, textbook file code-9-1.html -->
-                <textarea name="textarea"></textarea>
+         <!--        <textarea name="textarea"></textarea>
             </div>
         </fieldset>
         <input type="submit" id="submit" value="Submit" class="btn">
     </form>
 
        </main>
-</div> 
+</div>  -->
     <hl></hl>
+           
     <hr>
     <footer><p>find me on <a href="https://www.linkedin.com/">linkedin</a> and <a href="https://github.com/">github</a></p> </footer>
     
-
 </body>
+
+<script src="slightlycrustyjquery.js"></script>
+<script> 
+    
+    const chaos = ["alastor","discord","akechi","chaos","darkorn","jevil","spamton","wilbur","death","loki","vox","joey"];
+    
+      function validateForm(event) {
+          let chaosmode = false;
+      var name = document.forms["contactForm"]["name"].value;
+      var email = document.forms["contactForm"]["email"].value;
+      var subject = document.forms["contactForm"]["subject"].value;
+      var message = document.forms["contactForm"]["message"].value;
+      
+      // Regular expressions for validation
+      var nameRegex = /^[a-zA-Z\s]*$/;
+      var emailRegex = /\S+@\S+\.\S+/;
+      
+      var nameError = document.getElementById("nameError");
+      var emailError = document.getElementById("emailError");
+      var subjectError = document.getElementById("subjectError");
+      var messageError = document.getElementById("messageError");
+      
+      nameError.innerHTML = "";
+      emailError.innerHTML = "";
+      subjectError.innerHTML = "";
+      messageError.innerHTML = "";
+      
+      if (name === "") {
+        nameError.innerHTML = "Name must be filled out";
+        return false;
+      } else if (!nameRegex.test(name)) {
+        nameError.innerHTML = "Name can only contain letters and spaces";
+        return false;
+      }
+    
+      
+      if (email === "") {
+        emailError.innerHTML = "Email must be filled out";
+        return false;
+      } else if (!emailRegex.test(email)) {
+        emailError.innerHTML = "Invalid email address";
+        return false;
+      }
+      
+      if (subject === "") {
+        subjectError.innerHTML = "Subject must be filled out";
+        return false;
+      }
+      
+      if (message === "") {
+        messageError.innerHTML = "Message must be filled out";
+        return false;
+        
+      }
+     for (let i = 0; i < chaos.length; i++) {
+      if (name.toLowerCase() == chaos[i]) {
+          chaosmode = true;
+          
+      }
+    
+    }
+          if (chaosmode == true)
+              {
+                 return false;
+              }
+          alert("Form submitted successfully!");
+      }
+    
+    
+    </script>    
+
+<footer>
+    <br>
+    <br>
+      <br>
+      <br>
+      <br>
+      <br>
+</footer>
